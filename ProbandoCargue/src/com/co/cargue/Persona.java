@@ -6,6 +6,8 @@ public class Persona {
 	private String apellido;
 	private String address;
 	private String city;
+	private String telefono;
+	private String email;
 
 	public Persona() {
 
@@ -83,6 +85,22 @@ public class Persona {
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
+	}
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 }
